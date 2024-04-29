@@ -5,4 +5,4 @@ usuario haya introducido.
 """
 nombre = input('Digite su nombre:')
 
-print(f'Hola {nombre}')
+print(f'¡Hola {nombre}!')
