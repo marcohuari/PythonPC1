@@ -8,8 +8,10 @@ suponga que el rango de tiempo de cada comida es inclusivo. Por ejemplo, ya sean
 las 7:59 o las 8:00, o en cualquier momento intermedio, es hora de desayunar.
 """
 
-h = int(input('Digite la hora actual: '))
-m = int(input('Digite el minuto actual: '))
+h,m = input('Digite la hora actual en formato ##:##: ').split(":")
+
+h = float(h)
+m = float(m)
 
 if (h >= 0 and h <= 24) and (m >= 0 and m <= 60):
     if (h >= 7 and h <= 8) and (m >= 0 and m <= 60):
