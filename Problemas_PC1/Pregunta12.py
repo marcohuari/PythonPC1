@@ -27,7 +27,7 @@ longitud = len(nom_archivo)
 extension = nom_archivo[punto:longitud]
 
 tipo_mime = {
-    '.jpg': 'image/jpeg',
+    '.jpg': 'image/jpg',
     '.jpeg': 'image/jpeg',
     '.gif': 'image/gif',
     '.png': 'image/png',
@@ -35,11 +35,17 @@ tipo_mime = {
     '.txt': 'text/plain',
     '.zip': 'application/zip'
 }
-if tipo_mime[extension] == '.jpg' and
-   tipo_mime[extension] == '.jpeg' and
-   tipo_mime[extension] == '.gif' and
-   tipo_mime[extension] == '.png' and
-   tipo_mime[extension] == '.pdf' and
-   tipo_mime[extension] == '.txt' and
-   tipo_mime[extension] == '.zip' and:
+
 print(tipo_mime[extension])
+
+if (
+   tipo_mime[extension] == '.jpg' or
+   tipo_mime[extension] == '.jpeg' or
+   tipo_mime[extension] == '.gif' or
+   tipo_mime[extension] == '.png' or
+   tipo_mime[extension] == '.pdf' or
+   tipo_mime[extension] == '.txt' or
+   tipo_mime[extension] == '.zip'
+):
+    print(tipo_mime[extension])
+else: '-'
